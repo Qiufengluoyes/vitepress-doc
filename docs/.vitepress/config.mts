@@ -2,23 +2,37 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "枫落丰源",
+  title: "Fuwari-FENG",
   description: "个人页",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '关于主题', link: '/about' },
+      { text: '在线演示', link: 'https://blog.feng1026.top/' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '开始使用',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Runtime API Examples', link: '/api-examples' },
         ]
-      }
+      },
+      {
+        text: '特色功能',
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' },
+        ]
+      },
+      {
+        text: '关于',
+        items: [
+          { text: '关于主题', link: '/about' },
+        ]
+      },
     ],
 
     socialLinks: [
